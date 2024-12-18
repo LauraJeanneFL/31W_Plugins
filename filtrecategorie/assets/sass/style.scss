@@ -1,0 +1,51 @@
+// Variables de couleurs
+$couleur1: #a28f948b;
+$couleur2: #7661678b;
+$couleur3: #ead7c3;
+
+// Style du conteneur
+.filtrecategorie-container {
+  margin: 20px 0;
+  padding: 10px;
+  background-color: var(--couleur3);
+
+  label {
+    font-size: 1.2rem;
+    color: var(--couleur1);
+  }
+
+  #filtrecategorie-selecteur {
+    padding: 5px;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+}
+
+// Style des résultats
+.destination-item {
+  border: 1px solid var(--couleur3);
+  padding: 10px;
+  margin-bottom: 10px;
+
+  h3 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    color: #000;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  .en-savoir-plus {
+    color: #0073aa;
+    text-decoration: none;
+  }
+
+  .en-savoir-plus:hover {
+    text-decoration: underline;
+    color: var(--couleur3);
+  }
+}
