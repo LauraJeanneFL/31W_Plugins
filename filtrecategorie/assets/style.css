@@ -1,0 +1,38 @@
+.filtrecategorie-container {
+  margin: 20px 0;
+  padding: 10px;
+  background-color: var(--couleur3);
+}
+.filtrecategorie-container label {
+  font-size: 1.2rem;
+  color: var(--couleur1);
+}
+.filtrecategorie-container #filtrecategorie-selecteur {
+  padding: 5px;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.destination-item {
+  border: 1px solid var(--couleur3);
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.destination-item h3 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  color: #000;
+}
+.destination-item img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+.destination-item .en-savoir-plus {
+  color: #0073aa;
+  text-decoration: none;
+}
+.destination-item .en-savoir-plus:hover {
+  text-decoration: underline;
+  color: var(--couleur3);
+}/*# sourceMappingURL=style.css.map */
