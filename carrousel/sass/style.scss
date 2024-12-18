@@ -1,0 +1,119 @@
+.carrousel {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.7);
+  transition: opacity 0.3s ease-in-out;
+}
+
+.carrousel--ouvrir {
+  display: flex;
+  opacity: 1;
+}
+
+.carrousel__figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  overflow: hidden;
+  max-width: 90%;
+  max-height: 90%;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+}
+
+.carrousel__img {
+  display: none;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  opacity: none;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.carrousel__img--visible {
+  display: block;
+  opacity: 1;
+}
+
+.carrousel__x,
+.carrousel__gauche,
+.carrousel__droite {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 20;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.carrousel__x:hover,
+.carrousel__gauche:hover,
+.carrousel__droite:hover {
+  background-color: rgba(255, 255, 255, 1);
+  transform: scale(1.1);
+}
+
+.carrousel__gauche {
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+}
+
+.carrousel__droite {
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+}
+
+.carrousel__x {
+  top: 10px;
+  right: 10px;
+}
+
+.galerie {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.galerie__img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.galerie__img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.carrousel__img--visible {
+  animation: fadeIn 0.5s ease-in-out;
+}
